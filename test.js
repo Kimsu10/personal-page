@@ -1,4 +1,6 @@
 /*화면사이즈 변경시 offsetTop 안되서 방법찾는중 */
+
+
 const spans = document.querySelectorAll("span")
 
 

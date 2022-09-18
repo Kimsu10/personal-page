@@ -8,14 +8,15 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    z-index: 32;
+    text-align: center;
+    z-index: 5;
     position: fixed;
     top: 0;
     width:100%;
     height: 100%;
     background-color: rgb(238, 223, 199);
     animation: hideLoadingScreen 0.2s linear forwards;
-    animation-delay: 2.5s;
+    animation-delay: 3.5s;
 }
 
 @keyframes hideLoadingScreen{
@@ -41,6 +42,10 @@ visibility: hidden;
 }
 }
 
+.entering{
+    display: flex;
+    text-align: center;
+}
 /*navigator rem 아직 잘 모를겠다*/
 .navigator{
     display: flex;
