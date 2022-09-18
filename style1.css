@@ -1,0 +1,348 @@
+body{
+    margin:0;
+    background-color: rgb(238, 223, 199);
+}
+
+/*wrap 때문에 바디 없어도 될듯*/
+#loading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 32;
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgb(238, 223, 199);
+    animation: hideLoadingScreen 0.2s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes hideLoadingScreen{
+    form{
+        opacity: 1;
+    } to {
+opacity: 0;
+visibility: hidden;
+    }
+}
+/*반응형헤더 연습*/
+@media screen and (max-width: 768px){
+    .navigator{
+        flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    }
+
+    .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+}
+
+/*navigator rem 아직 잘 모를겠다*/
+.navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 33, 39);
+    padding: 10px 60px;
+    position: sticky; top: 0; z-index: 3;
+}
+
+.site-name{
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+ul{
+    font-family:'Montserrat', sans-serif;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+}
+
+.nav-menu span{
+    padding: 10px 15px;
+    color:rgb(190, 190, 190);
+}
+
+span:hover{
+    color: white;
+    background-color: orange;
+    text-decoration: underline;
+    border-radius: 10%;;
+    cursor: pointer;
+}
+
+
+/*소개글*/
+.main-comment{
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 120px;
+    margin: 13%;
+    margin-bottom: 50px;
+}
+
+.eng{
+    font-family: 'Gugi', cursive;
+    font-weight:400px;
+    font-size:65px;
+}
+
+
+.back-h{
+    color: rgb(237, 97, 167);
+    
+}
+
+.back-h:hover{
+    background-color: transparent;
+    color: aliceblue;
+    -webkit-text-stroke: 1px black;
+    transform: translateY(-25px) scale(4);
+    transition: 0.5s;
+}
+
+.detail-comment{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300px;
+    font-size:23px;
+    font-style: italic;
+    margin-left: 13%;
+    line-height: 230%;
+    margin-bottom: 15%;
+}
+
+.highlight{
+    color:rgb(238, 223, 199);
+}
+
+.highlight:hover{
+    background-color: rgba(98, 167, 144, 0.591);
+    border-style: dotted;
+    border-radius: 20px;
+}
+
+.highlight0{
+    display: -webkit-inline-box;
+    border-style:dashed;
+    border-color: hotpink;
+    border-radius: 23%;
+}
+
+.highlight0:hover{
+    font-family: 'Gugi', cursive;
+    color: hotpink;
+    background-color: rgb(238, 223, 199);
+    transform:translateX(17px) translateY(-178px) scale(4);
+    border-style: none;
+	transition-duration: .8s;
+    border-radius: 10%;
+    
+}
+
+.highlight1:hover{
+    background-color: rgba(121, 177, 244, 0.591);
+    border-radius: 5%;
+}
+
+.highlight2{
+    display: -webkit-inline-box;
+    border-color: rgb(124, 123, 123);
+    border-radius: 23%;
+}
+
+.highlight2:hover{
+font-family: 'Gugi', cursive;
+font-style: normal;
+color: hotpink;
+background-color: rgb(238, 223, 199);
+transform:translateX(27px) translateY(-235px) scale(4) ;
+border-style: none;
+transition-duration: .7s;
+border-radius: 20%;
+}
+
+p{
+    margin-bottom: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    line-height: 150%;
+
+}
+
+
+h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    justify-content: flex-start;
+    padding: 45px 50px;
+    margin:0;
+    background: linear-gradient(90deg, black 50%);
+    color: rgb(217, 217, 217);
+    background-color: rgb(30, 33, 39, .8);
+}
+
+h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 4rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 45px 45px;
+    height: 5vh;
+    margin:0;
+    background: linear-gradient(90deg, black 50%);
+    color: rgb(217, 217, 217);
+    background-color: rgb(30, 33, 39, .8);
+}
+
+i{ 
+    padding: 0px 4px;
+}
+
+i:hover{
+    color: white;
+}
+
+/*본문*/
+
+.content{
+    height: 65vh;
+    display: flex; z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: .9;
+    padding:4.8%
+    }
+    
+
+
+h4{
+    font-size: 2.3rem;
+    margin-top: 0;
+    margin-bottom:2rem;
+
+}
+    
+.small-comment{
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+    display: flex;
+    padding: 5%;
+    font-size:1.2rem;
+    
+}
+
+.small-comment2{
+    height: 72vh;
+    margin-top:5%;
+    color:beige;
+    line-height: 200%;
+    display: flex;
+    padding: 5%;
+    font-size:1.5rem;
+    flex-direction: column;
+}
+
+    /*영역구분용 임시*/
+
+    div:nth-child(6){ background-color: orange;}
+    div:nth-child(8){ background: linear-gradient(120deg, teal 30%, rgb(148, 21, 148) 50% );}
+    div:nth-child(10){ background-color: skyblue;}
+    div:nth-child(11){ background-color: transparent;}
+
+
+
+
+
+/*pictures*/
+
+.mbti-comment{
+    color: rgb(234, 230, 223);
+    margin:2%;
+}
+    
+.picture{
+    height: 65vh;
+    border-radius: 10%;
+    margin:10px;
+    border:2px solid white;
+}
+
+
+/*테스트*/
+
+
+
+
+/* overflow: hidden;텍스트 후버시 글자뜨게하고싶다..시간부족하다..*/
+
+
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact{
+    font-family: 'Montserrat, sans-serif';
+    font-size: 5rem;
+    font-weight:700;
+    border-bottom: 2px solid rgb(92, 90, 90);
+    
+    }
+
+.links>a{
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.links>a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.icon{
+    height: 240px;
+    margin-top:20px;
+}
+.icon2{
+    width: 180px;
+    margin-right: 29px;
+    margin-bottom:25px;
+    opacity: .85;;
+}
+.copy-right{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+a{
+    color:black;
+}
+a:hover{
+    transform: translateX(15px);
+}
