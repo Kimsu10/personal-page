@@ -2,102 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimsu</title>
-
-    <link rel="stylesheet" type="text/css" href="style1.css">
-
+    <link href="style.css" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--가로전체넓이가 스크롤로 바뀌는 원인 어떻게 해야하지..?-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
-
 <body>
     
-
-    <!--로딩효과-->
     <div id="loading"><!--전체화면-->
         <div id="loading-walk">
             <img src="imgs/walk.gif" alt="walk">
-            <p class="entering"> entering...<br>14인치 화면에 최적화 중...</p>
+            <p class="entering"> entering...<br>14인치 최적화...</p>
             <div id="loading-empty"></div><!--이미지 외-->
         </div>
     </div>
-
+    
     <script>AOS.init();</script>
 
-        <nav class="navigator">
-            <h2 class="site-name">sujeong Kim</h2>
-            <ul class= "nav-menu">
-                <span>HOME</span>
-                <span>ABOUT ME</span>
-                <span>MBTI</span>
-                <span>FAVORITES</span>
-                <span>CONTACT</span>
-            </ul>
-        </nav>
+
+    <div class="navigator">
+        <h2 class="site-name">SUJEONG KIM</h2>
+        <div class="menu">
+        <span>MAIN</span><span>ABOUT ME</span><span>MBTI</span><span>FAVORITES</span><span>CONTACT ME</span>
+    </div>
+    </div>
     
-    <div>
-    <!--고민-->
+    <div class="content">
+        <!--사이즈 조절용 나중에 다시보기-->
         <h1 class="main-comment"><i class="eng">Hello!</i> 안녕하세요!<br/>
-        <i class="eng">I'm SUJEONG.</i> <i class="highlight">자가지능<i class="back-h">김수정</i> </i> 입니다.<br>
-        </h1>
-        <p class = "detail-comment">Think from various perspectives and Communicate.<br/> 
-        I wanna be a <i class="highlight0">BACK-END </i> Developer who want to be with. <br/>
-        <i class="highlight1">다양하게 생각하고 소통하여 </i><i class="highlight2">[함께 하고싶은 개발자] </i> 가 되고싶습니다. </p>
+            <i class="eng">I'm SUJEONG.</i> <i class="highlight">자가지능<i class="back-h">김수정</i> </i> 입니다.<br>
+            </h1>
+            <p class = "detail-comment">Think from various perspectives and Communicate.<br/> 
+            I wanna be a <i class="highlight0">BACK-END </i> Developer who want to be with. <br/>
+            <i class="highlight1">다양하게 생각하고 소통하여 </i><i class="highlight2">[함께 하고싶은 개발자] </i> 가 되고싶습니다. </p>
+        </div>
     </div>
 
-        <h3 data-aos = "fade-left" data-aos-anchor-placement="top-center"
-        data-aos-easing="ease in-cubic" data-aos-duration="500">ABOUT ME</h3>
-
-        <div data-aos = "fade-left" data-aos-anchor-placement="top-center" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="500" class="content">
-            <img class="picture" src="imgs/me2.png" data-aos = "fade-left" data-aos-anchor data-aos-easing="linear"  data-aos-duration="500">
-            <div class="small-comment" data-aos = "flip-left" data-aos-anchor-placement="top-center" data-aos-easing="ease in-cubic" data-aos-duration="1000">  <h4>Introduce</h4>-어려서부터 장난기와 호기심이 많았습니다. <br/>-하나하나 분해해서 확인해보는걸 좋아해요.<br/>-궁금한건 해결해야 직성이 풀립니다. <br/>-새로운 지식을 배우는걸 좋아해요.<br/><br/><h4>Reason to be a Developer</h4>계기는 부끄러운 생각에서인데<br/>22년 6월 여행지에서 풍경을 보다 불현듯 <br/>'내가 보는 이 풍경이 가상으로 만들어진 것이라면<br/>나무 하나하나 저 강물의 물줄기 하나하나는<br/>몇 Byte고 어떻게 구현한 것일까?' 라는 생각에<br/>집에와서 파이썬을 공부해서 작은것들을 만들어보았는데<br/>너무 재미있었고 자세히 배워보고 싶어져서 지원했습니다.
-            </div>
+    <div  class="content">
+        <div data-aos = "fade-left" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="500" class="box-content"><b class="sub-title">ABOUT ME</b>
+        <img class="picture" src="imgs/me2.png">
+        <p class="small-comment" data-aos = "flip-left" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="500"><i class="highlight5"></strong>저는요 </i><br/><br/>-어려서부터 장난기와 호기심이 많았습니다. <br/>-하나하나 분해해서 확인해보는걸 좋아해요.<br/>-막히는건 어떻게든 해결해야 직성이 풀립니다. <br/>-새로운 것을 배우는걸 좋아해요.<br/><br/><i class="highlight5">위코드 지원 동기</i><br/><br/>
+            계기는 부끄러운 생각에서인데<br/>22년 6월 여행지에서 풍경을 보다 불현듯 <br/>'내가 보는 이 풍경이 가상으로 만들어진 것이라면<br/>나무 하나하나 저 강물의 물줄기 하나하나는<br/>몇 Byte고 어떻게 구현한 것일까?' 라는 생각이 들었고<br/>집에와서 파이썬을 공부해서 작은것들을 만들어보았는데<br/>너무 재미있었고 더 많은것을 배우고 실현하고싶어 지원했습니다.</p>
         </div>
-        
+    </div>
 
-        <h3 data-aos = "fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease in-cubic" data-aos-duration="500">MBTI</h3>
-        <div data-aos = "fade-left" data-aos-anchor-placement="top-center" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="500" class="content">
-            <img class="picture" src="imgs/enfp.png">
-            <div class="small-comment2" data-aos = "flip-left" data-aos-anchor-placement="top-center"
-                data-aos-easing="ease in-cubic" data-aos-duration="1000">현재 제 MBTI 는 ENTP 입니다.<br/>항상 ENFP 였는데 작년말에 어떤일로 바뀌었습니다<br/><br/><h4>ENTP</h4><br/>-지적도전을 즐기는 영리하고 호기심이 많은 사색가<br/>-외향형이지만 혼자만의 시간도 중요하다.<br/>-새로운 시도를 좋아하고, 여행을 즐겨다닌다.<br/>-개방적이고 자유로운것을 좋아한다.<br/>-etc...</div>
-            <img class="picture" src="imgs/entp.png"> 
+    <div class="content">
+        <div data-aos = "fade-left" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="500" class="box-content"><b class="sub-title">MBTI</b>
+            <img class="picture" src="imgs/entp.png">
+            <p class="small-comment2" data-aos = "flip-left" data-aos-anchor-placement="top-center"
+            data-aos-easing="ease in-cubic" data-aos-duration="500">작년까지는 ENFP였는데 12월의 어떤 일로 ENTP가 되어버렸습니다.
+            <br/><br/><i class="highlight5">ENTP </i><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 지적도전을 즐기는 영리하고 호기심이 많은 사색가<br/><br/>⦁ 빠른 생각 을 하는 사람<br/>&nbsp; – 토론자는 매우 유연한 마음을 가지고 있어 노력 없이 아이디어에서 아이디어로 전환할 수 있습니다.<br/>
+            ⦁탁월한 브레인 스토머<br/>&nbsp; – 토론자에게 최고의 솔루션을 찾기 위해 모든 각도에서 문제를 분석하는 것만큼 즐거운 일은 없습니다. <br/>
+            ⦁ 활기참 <br/>&nbsp;– 이러한 특성을 결합하여 흥미로운 문제를 조사할 기회가 주어지면 토론자는 해결책을 찾기 위해 긴 밤낮을 가리지 않고 열정과 에너지가 정말 인상적입니다.<br/><br/>☺ 오랜기간 ENFP여서 아직까지 ENFP 특징도 있는거 같습니다.</p>
         </div>
-        
-
-
-        <h3 data-aos = "fade-left" data-aos-anchor-placement="top-center"
-        data-aos-easing="ease in-cubic" data-aos-duration="500">FAVORITES</h3>
-        <div data-aos = "fade-left" data-aos-anchor-placement="top-center" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="500" class="content">
-            <img class="picture" img src="imgs/swiss.png">
-            <div class="small-comment" data-aos = "flip-left" data-aos-anchor-placement="top-center"
-            data-aos-easing="ease in-cubic" data-aos-duration="1500">컴퓨터 관련한것은 당연히 좋아합니다<br/>컴퓨터를 제외하고 하나만 골라보자면<br/><br/><h4>여행하며 사진찍기</h4><br/>어릴적부터 여행하는것을 좋아했습니다.<br/>여행하며 다양한 사람들을 만나고 <br/>다양한 문화를 체험하다보니 <br/>자연스럽게 사진찍는것도 좋아하게 되었습니다.<br/><br/>그밖에도 취미나 좋아하는게 정말 많습니다.</div>
-            
-        </div>
+    </div>
     
-
-        <div class="content">
-        <div class="footer" data-aos = "flip-left" data-aos-anchor-placement="top-center"
-        data-aos-easing="ease in-cubic" data-aos-duration="500">
-        <h4 class="contact"> Contact Me</h4>
-            <div class="links">
-                <a href="https://kimsu10.github.io/"><img class="icon"  src="imgs/githubicon.png" ></a>
-                <a href="https://github.com/Kimsu10"><img class="icon2"  src="imgs/blogger.png"></a>
-                <a href="mailto:betnwjd25@gmail.com?subject=change-title&body = Message"><img class="icon2" src="imgs/Email.png"></a>
-
-                <!--<a class="blog" href="https://kimsu10.github.io/">Blog</a>
-                <a class="github" href="https://github.com/Kimsu10">github</a>-->
+    <div class="content">
+        <div data-aos = "fade-left" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="500" class="box-content"><b class="sub-title">FAVOTITES</b>
+        <img class="picture" img src="imgs/swiss.png">
+        <p class="small-comment3" data-aos = "flip-left" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="500">컴퓨터 관련한것은 당연히 좋아합니다<br/>컴퓨터를 제외하고 하나만 골라보자면<br/><br/><i class="highlight5">여행하며 사진찍기 </i><br/><br/>어릴적부터 여행하는것을 좋아했습니다.<br/>촉박하게 많은곳을 가야하는 패키지여행보다는 <br/>자유롭게 돌아다니는 배낭여행을 더 선호합니다.<br/>여행하며 다양한 사람들을 만나고 <br/>그 지역의  문화를 체험하다보니 <br/>그 경험을 남기고 싶어 사진을 찍었습니다<br/> 그렇게 사진찍는것도 좋아하게 되었습니다.<br/>
+        <br/>그 외에 좋아하는것도 하고싶은것도 많은데 <br/>요즘에는 클라이밍에 푹 빠졌습니다.</p>
+    
+        </div>    
+        <div class="content"><!--이게 없으면 스크롤 에러가 난다...왜..?--></div>
+    <div class="content"> 
+        <div data-aos = "flip-left" data-aos-anchor-placement="top-center" data-aos-easing="ease in-cubic" data-aos-duration="500" class="contact"> 
+            Contact Me</div>
+        <div class="links" data-aos = "fade-up" data-aos-anchor-placement="top-center"
+        data-aos-easing="ease in-cubic" data-aos-duration="1000">
+        <div class="icon-center">
+            <a href="https://kimsu10.github.io/"> <img class="icon"  src="imgs/github.png" ></a>
+            <a href="https://github.com/Kimsu10"> <img class="icon"  src="imgs/blogger.png"></a>
+            <a href="mailto:betnwjd25@gmail.com?subject=change-title&body = Message"><img class="icon" src="imgs/Email.png"></a>
             </div>
-            <div class="copy-right">img-copyright
-                <a href="https://www.flaticon.com/free-icons/blogs" title="blogs icons">Blogs icons created by Fathema Khanom - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/at" title="at icons">At icons created by Freepik - Flaticon</a>
-        
-        </div> 
         </div>
-    <script src="test.js"></script>
+        <div class="copy-right">위로 스크롤하면 메뉴가 나옵니다.<br/><br/>img-copyright
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/blogs" title="blogs icons">Blogs icons created by Fathema Khanom - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/at" title="at icons">At icons created by Freepik - Flaticon</a>
+        </div>
+    </div>
+    
+    <script src="move.js"></script>
 </body>
-
 </html>
