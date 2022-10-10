@@ -5,10 +5,10 @@ body{
     background-color:  whitesmoke;
 }
 
-div:nth-child(5){background-color: orange;}
-div:nth-child(6){background: linear-gradient(120deg, teal 30%, rgb(148, 21, 148) 50% );}
-div:nth-child(7){background-color: skyblue;}
-
+div:nth-child(5){background: linear-gradient(whitesmoke 2%, orange, rgb(148, 21,148))}
+div:nth-child(6){background: linear-gradient( rgb(148, 21, 148) 50%, teal);}
+div:nth-child(7){background: linear-gradient( teal 55%, rgb(137, 206, 246));}
+div:nth-child(8){background: linear-gradient( rgb(137, 206, 246), whitesmoke);}
 
 #loading{
     display:flex;
@@ -22,7 +22,7 @@ div:nth-child(7){background-color: skyblue;}
     height: 100%;
     background-color: rgb(238, 223, 199);
     animation: hideLoadingScreen 0.2s linear forwards;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
 }
 
 @keyframes hideLoadingScreen{
@@ -82,6 +82,7 @@ span{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    overflow:hidden;
 }
 
 
@@ -146,7 +147,7 @@ span{
     font-family: 'Gugi', cursive;
     color: hotpink;
     background-color: whitesmoke;
-    transform:translateX(17px) translateY(-200px) scale(4);
+    transform:translateX(17px) translateY(-380%) scale(4);
     border-style: none;
 	transition-duration: 1s;
     border-radius: 10%;
@@ -169,7 +170,7 @@ font-family: 'Gugi', cursive;
 font-style: normal;
 color: hotpink;
 background-color: whitesmoke;
-transform:translateX(35px) translateY(-260px) scale(4) ;
+transform:translateX(35px) translateY(-487%) scale(4) ;
 border-style: none;
 transition-duration: 1s;
 border-radius: 20%;
@@ -180,18 +181,11 @@ border-radius: 20%;
     font-weight: 900;
 }
 
-p{
-    margin-bottom: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 21px;
-    line-height: 150%;
-    
-    
-}
-
+/*2 페이지*/
 .box-content{
     display: flex;
     flex-direction: row;
+    width:100%
 }
 
 .sub-title{
@@ -202,11 +196,12 @@ p{
     font-size: 2.5em;
     padding: 12% 8%;
     margin-top:100px;
-    background-color: black;
+    background: linear-gradient(transparent , rgb(31, 31, 31) 70%, transparent);
     display: flex;
     align-items: center;
     color:whitesmoke;
     margin:0;
+    
 
 }
 
@@ -220,47 +215,138 @@ p{
 }
 
 .small-comment{
-    width:45vw;
+    width:40vw;
     height: 75vh;
     line-height: 200%;
-    font-size:1.2rem;
+    font-size:1.3rem;
     margin-top: 10%;
-    margin-right: 0; 
-    padding:0px 0px;
 }
 
+
+
+
+/*3페이지*/
 .small-comment2{
-    width:55vw;
+    width:52vw;
     height: 100vh;
     color:rgb(217, 202, 178);
     line-height: 200%;
     padding: 2% 0;
-    font-size:1.2rem;
+    font-size:1.3rem;
     margin-top: 8%;
     
 }
 
-.small-comment3{
-    width:45vw;
-    height: 75vh;
-    line-height: 200%;
-    font-size:1.2rem;
-    margin-top: 10%;
-    margin-right: 0; 
-    padding:0px 0px;
-    color:rgb(3, 39, 100);
+
+
+
+
+/*  4페이지 */
+.hde{
+    width:100%;
+    height: 100vh;
+    
+}
+
+.slideBox{
+    width: 100%;
+    height: 440vh;
+
+    transition: transform 1s;
 }
 
 
+.slide-item{
+    display:flex;
+    width: 66vw;
+    height: 71vh;
+    margin-top:15%;
+    margin-right: 3%;
+    margin-bottom: 13%;
+    position: relative;
+    flex-direction: row;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: 5px solid whitesmoke;
+    float:left;
+}
 
-/*footer
-.footer{
-    display: flex;
+
+#movie{
+    width: 40vw;
+    transform:translateY(.3vh);
+    height: 99.5%;
+    background-color: black;
+}
+.slide-item>img{
+    width: 35vw;
+    height: 100%;
+
+}
+
+.Explanation{
+    width: 31vw;
+    height: 75vh;
+    position:relative;
+    margin:0;
+    background-color: transparent;
+    text-align:left;
+    font-size:1.3rem;
+    line-height: 200%;
+    padding: 3%;
+    color: rgb(243, 236, 222);
+    float:right;
+}
+
+.van{
+    background-color: transparent;
+    width:40vw;
+    height:70vh;
+    font-size: 1.2rem;
+    line-height:200%;
+    padding:3%;
+    color: rgb(243, 236, 222);
+}
+
+.thick{
+    font-size: 2.5rem;
+    color: rgb(243, 236, 222);
+}
+
+.btn-content{
+    display:flex;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 10px;
-}*/
+    margin-top:25%;
+    margin-left: 4%;
+    margin-right:2%;
+}
+
+button{
+    width: 25px;
+    height:25px;
+    background-color: whitesmoke;
+    border-radius: 100% ;
+    border-color:rgba(121, 177, 244, 0.591);
+    margin-bottom: 100%;
+}
+
+    
+button:hover{
+    background-color:grey;
+}
+
+/*button:disabled{background-color: grey;}*/
+
+
+
+
+
+
+
+
+
+/* 5페이지*/
 
 .contact{
     font-family: 'Montserrat, sans-serif';
@@ -268,6 +354,8 @@ p{
     font-weight:800;
     width: 99vw;
     color:whitesmoke;
+    margin-top: 1%;
+    padding:4%;
     /*border-bottom: 2px solid whitesmoke;*/
     display: flex;
     align-items: center;
@@ -288,9 +376,8 @@ p{
     flex-direction: center;
 }
 .icon{
-    height: 300px;
-    padding-top: 20% ;
-    padding-right: 10%;
+    height: 30vh;
+    padding: 10%
     
 }
 
@@ -309,3 +396,6 @@ a{
 a:hover{
     text-decoration:none;
 }
+
+
+
