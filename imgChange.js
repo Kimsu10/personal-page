@@ -14,8 +14,8 @@ function imgChange2 (){
     } else if (travel.src.match("uk")){
         myImg.src="imgs/swiss.png"
     } else if(travel.src.match("swiss")) {
-        myImg.src="imgs/animal.JPG"
-    } else if(travel.src.match("animal.JPG")) {
+        myImg.src="imgs/animal.jpg"
+    } else if(travel.src.match("animal")) {
         myImg.src="imgs/landing.JPG"
     }
 }
